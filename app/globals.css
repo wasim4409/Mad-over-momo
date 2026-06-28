@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.hero-bg {
+  background-image: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.8)), url('https://picsum.photos/id/1080/1920/1080');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.steam {
+  animation: steam 4s infinite ease-in-out;
+}
+
+@keyframes steam {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-25px); }
+}
